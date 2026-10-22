@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tomazza · Pizza en tu evento o en tu casa</title>
+<style>
+:root{color-scheme:light;--g:#166936;--g2:#0f4d27;--r:#fc4237;--bg:#f6efe7;--tx:#1d1d1b;--mu:#5b5b55;--card:#fff;--line:#e8e1d2;--p4:url(images/imagen-1.jpg);--p7:url(images/imagen-2.jpg);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+.wrap{max-width:1040px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{height:30px;display:block;background:#f6efe7;border-radius:6px;padding:2px 6px}
+nav a{margin-left:16px;text-decoration:none;color:var(--tx);font-weight:600;font-size:.92rem}
+.btn{display:inline-block;background:var(--r);color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:0;font-size:1rem;cursor:pointer}
+.btn.alt{background:transparent;border:2px solid #fff}
+.hero{background:var(--g);color:#fff;padding:48px 0 56px}
+.hero .wrap{display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+.tag{display:inline-block;background:var(--r);padding:5px 14px;border-radius:999px;font-size:.8rem;font-weight:700;margin-bottom:16px}
+h1{font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;letter-spacing:-1.5px}
+h1 span{color:#ffd9a0}
+.hero p{margin:18px 0 28px;font-size:1.1rem;opacity:.95;max-width:480px}
+.hero .btn+.btn{margin-left:8px}
+.himg{aspect-ratio:4/5;border-radius:24px;background:var(--p7) 55% 50%/cover;border:5px solid #fff;transform:rotate(2deg);box-shadow:0 20px 40px rgba(0,0,0,.3)}
+section{padding:64px 0}
+h2{font-size:clamp(1.7rem,5vw,2.4rem);letter-spacing:-.8px;margin-bottom:8px;color:var(--g)}
+h2+p{color:var(--mu);margin-bottom:32px;max-width:560px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card .ic{font-size:2rem}.card h3{margin:8px 0 4px;color:var(--r)}
+.card p{color:var(--mu);font-size:.95rem}
+.port{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+.ph{aspect-ratio:4/3;border-radius:16px;background-size:cover;display:flex;align-items:flex-end;padding:14px;color:#fff;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.ph.a{background-image:linear-gradient(transparent 55%,rgba(0,0,0,.6)),var(--p4);grid-column:span 2;aspect-ratio:16/9;background-position:center}
+.ph.b{background-image:linear-gradient(transparent 55%,rgba(0,0,0,.6)),var(--p7);background-position:45% 60%}
+.ph.c{background-image:linear-gradient(transparent 55%,rgba(0,0,0,.6)),var(--p4);background-position:20% 85%;background-size:230%}
+.note{font-size:.82rem;color:var(--mu);margin-top:12px}
+.about{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about .wrap{display:grid;gap:32px;grid-template-columns:1fr 200px;align-items:center}
+.about img{width:100%;max-width:200px;justify-self:center}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px}
+.stats div{font-size:.9rem;color:var(--mu)}.stats strong{display:block;font-size:1.6rem;color:var(--r)}
+form{display:grid;gap:14px;max-width:620px}
+label{font-weight:600;font-size:.9rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--tx);width:100%}
+.row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+footer{background:var(--g2);color:#fff;padding:28px 0;text-align:center;font-size:.9rem}
+.ok{display:none;color:var(--g);font-weight:700}
+@media(max-width:700px){.hero .wrap,.about .wrap{grid-template-columns:1fr}.himg{aspect-ratio:4/3;transform:none}.row{grid-template-columns:1fr}nav a:not(.btn){display:none}.hero .btn{display:block;text-align:center}.hero .btn+.btn{margin:12px 0 0}.port{grid-template-columns:1fr}.ph.a{grid-column:auto;aspect-ratio:4/3}}
+.banner{background:#166837;color:#f6efe7;padding:0}.banner .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px}.banner img{width:100%;display:block}.banner h2{color:#f6efe7!important}.banner p{margin-bottom:22px}@media(max-width:700px){.banner .wrap{grid-template-columns:1fr;padding:0}.banner .wrap>div{padding:0 20px 40px}}</style></head><body>
+<header><div class="wrap"><img class="logo" src="images/imagen-3.png" alt="Tomazza"><nav><a href="#servicios">Servicios</a><a href="#locales">Para locales</a><a href="#portafolio">Portafolio</a><a href="#nosotros">Nosotros</a><a class="btn" href="#contacto" style="padding:9px 18px">Cotiza</a></nav></div></header>
+
+<div class="hero"><div class="wrap"><div>
+<span class="tag">Nuevo · Tomazza a domicilio</span>
+<h1>Llevamos la pizza <span>a donde estés.</span></h1>
+<p>Pizza romana al taglio, con masa de 72 horas de fermentación: llegamos con todo listo, la calentamos en 3 o 4 minutos y a disfrutar. Para tu cumpleaños, matrimonio, evento de empresa o una junta en casa.</p>
+<a class="btn" href="#contacto">Quiero cotizar mi evento</a><a class="btn alt" href="#portafolio">Ver portafolio</a>
+</div><div class="himg" role="img" aria-label="Slices de pizza Tomazza"></div></div></div>
+
+<section style="padding-bottom:0"><div class="wrap">
+<h2>Así de fácil</h2><p>Nuestro plus: no armamos una cocina en tu evento. Llegamos con todo listo.</p>
+<div class="grid">
+<div class="card"><div class="ic">1️⃣</div><h3>Llegamos con las pizzas listas</h3><p>Hechas antes, con masa de 72 horas de fermentación. Sin masa ni desorden en tu evento.</p></div>
+<div class="card"><div class="ic">2️⃣</div><h3>Las calentamos en 3 a 4 minutos</h3><p>Con nuestro horno especial salen calientes y al punto. Y si prefieres, las calientas tú.</p></div>
+<div class="card"><div class="ic">3️⃣</div><h3>Tú disfrutas</h3><p>Estamos poco rato en tu evento, sin ocupar tu cocina ni tu tiempo.</p></div>
+</div></div></section>
+
+<section id="servicios"><div class="wrap">
+<h2>Qué hacemos</h2><p>Del slice al paso a tu mesa: elige el formato que calce con tu ocasión.</p>
+<div class="grid">
+<div class="card"><div class="ic">🎉</div><h3>Tomazza en tu evento</h3><p>Cumpleaños, matrimonios, aniversarios y celebraciones. Llegamos con las pizzas listas y las servimos calientes en minutos.</p></div>
+<div class="card"><div class="ic">🏠</div><h3>Tomazza en tu casa</h3><p>Una noche de pizza sin cocinar ni lavar, y sin visitas largas en tu casa. Ideal para amigos y familia.</p></div>
+<div class="card"><div class="ic">🏢</div><h3>Eventos de empresa</h3><p>Lanzamientos, celebraciones de equipo y ferias. Atención ágil y presentación cuidada.</p></div>
+<div class="card"><div class="ic">🔥</div><h3>Arriendo de horno</h3><p>¿Prefieres calentarlas tú? Te arrendamos el horno y las pizzas quedan listas en 3 a 4 minutos.</p></div>
+<div class="card"><div class="ic">🍕</div><h3>Slice al paso</h3><p>Nuestra pizza romana al taglio, cortada al momento y servida por slice en el local. Pasa a probarla.</p></div>
+</div></div></section>
+
+<section id="locales" style="padding-top:0"><div class="wrap">
+<h2>Vende Tomazza en tu local</h2><p>Ya estamos en hostales y cafeterías. Si tienes un local, súmate y ofrece pizza romana a tus clientes.</p>
+<div class="grid">
+<div class="card"><div class="ic">🏨</div><h3>Hostales y cafeterías</h3><p>Ya nos venden en locales como el tuyo. Sumarte es simple.</p></div>
+<div class="card"><div class="ic">⏱️</div><h3>Lista en 3 a 4 minutos</h3><p>Las pizzas llegan hechas y solo se calientan. No necesitas cocina ni cocinero.</p></div>
+<div class="card"><div class="ic">🍕</div><h3>Masa de 72 horas</h3><p>Pizza romana al taglio con masa de 72 horas de fermentación, lista para tu vitrina.</p></div>
+</div>
+<p style="margin-top:24px"><a class="btn" href="#contacto">Quiero sumar mi local</a></p>
+</div></section>
+
+<section id="portafolio" style="padding-top:0"><div class="wrap">
+<h2>Portafolio</h2><p>Nuestros slices, listos para compartir en tu mesa.</p>
+<div class="port">
+<div class="ph a">Slices al paso, en caja para llevar</div>
+<div class="ph b">Cebolla morada y orégano</div>
+<div class="ph c">Margarita con albahaca</div>
+</div>
+<p class="note">Agrega fotos de eventos reales a medida que los vayas haciendo.</p>
+</div></section>
+
+<section class="banner"><div class="wrap"><img src="images/imagen-4.jpg" alt="Isotipo Tomazza en verde"><div><h2>Pizza que va donde tú vas</h2><p style="color:#f6efe7;opacity:.9">Cuéntanos fecha, lugar y cuántos son. Nosotros llevamos los slices.</p><a class="btn" href="#contacto">Agenda tu evento</a></div></div></section>
+
+<section id="nosotros" class="about"><div class="wrap"><div>
+<h2>Sobre nosotros</h2>
+<p style="color:var(--mu);margin-bottom:0;max-width:600px">Somos Tomazza: pizza romana al taglio, hecha con cariño, servida en slice y pensada para compartir. Partimos en el local y ahora nos movemos hasta tu evento o tu casa. Nos importa que la comida llegue rica, que el servicio sea cercano y que tú te lleves los aplausos.</p>
+<div class="stats"><div><strong>72 h</strong>de fermentación</div><div><strong>Contigo</strong>en cada detalle</div><div><strong>Donde sea</strong>vamos a ti</div></div>
+</div><img src="images/imagen-5.png" alt="Isotipo Tomazza"></div></section>
+
+<section id="contacto"><div class="wrap">
+<h2>Hablemos</h2><p>Para agendar un evento o sumar tu local, cuéntanos qué tienes en mente y te respondemos por WhatsApp.</p>
+<form id="f">
+<div class="row"><label>Nombre<input name="n" required></label><label>Teléfono<input name="t" type="tel" required></label></div>
+<div class="row"><label>¿Qué necesitas?<select name="e"><option>Cumpleaños</option><option>Matrimonio</option><option>Evento de empresa</option><option>En mi casa</option><option>Arriendo de horno</option><option>Vender Tomazza en mi local</option><option>Otro</option></select></label><label>Fecha<input name="d" type="date"></label></div>
+<div class="row"><label>N.º de invitados<input name="g" type="number" min="1"></label><label>Lugar / comuna<input name="l"></label></div>
+<label>Mensaje<textarea name="m" rows="4" placeholder="Cuéntanos más..."></textarea></label>
+<button class="btn" type="submit">Enviar por WhatsApp</button>
+<p class="ok" id="ok">¡Listo! Se abrió WhatsApp con tu mensaje.</p>
+</form></div></section>
+
+<footer>© Tomazza · tomazza.cl · Pizza que va donde tú vas</footer>
+<script>
+var WA="56998718472"; // WhatsApp de Tomazza
+document.getElementById("f").addEventListener("submit",function(ev){
+ ev.preventDefault();var d=new FormData(ev.target);
+ var t="Hola Tomazza, quiero cotizar:\nNombre: "+d.get("n")+"\nTeléfono: "+d.get("t")+"\nNecesita: "+d.get("e")+"\nFecha: "+d.get("d")+"\nInvitados: "+d.get("g")+"\nLugar: "+d.get("l")+"\nMensaje: "+d.get("m");
+ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t),"_blank");
+ document.getElementById("ok").style.display="block";
+});
+</script></body></html>
